@@ -69,7 +69,7 @@ class CinemaARViewController: UIViewController, UIImagePickerControllerDelegate,
         
         isActiveSub = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self, on: anchorEntity, { event in
             if event.isAnchored {
-                self.player?.play()
+                self.player.play()
             }
         })
         
