@@ -9,18 +9,23 @@
 /* Begin PBXBuildFile section */
 		657E4F6D2A9FA49500CD5D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E4F6C2A9FA49500CD5D83 /* AppDelegate.swift */; };
 		657E4F6F2A9FA49500CD5D83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E4F6E2A9FA49500CD5D83 /* ContentView.swift */; };
-		657E4F712A9FA49500CD5D83 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 657E4F702A9FA49500CD5D83 /* Experience.rcproject */; };
 		657E4F732A9FA49600CD5D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657E4F722A9FA49600CD5D83 /* Assets.xcassets */; };
 		657E4F762A9FA49600CD5D83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657E4F752A9FA49600CD5D83 /* Preview Assets.xcassets */; };
+		657E4F802A9FB23800CD5D83 /* CinemaARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E4F7F2A9FB23800CD5D83 /* CinemaARView.swift */; };
+		657E4F842A9FB36900CD5D83 /* CinemaARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E4F832A9FB36900CD5D83 /* CinemaARViewController.swift */; };
+		657E4F8B2A9FBE1900CD5D83 /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 657E4F872A9FB53400CD5D83 /* example.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		657E4F692A9FA49500CD5D83 /* cinemaAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cinemaAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		657E4F6C2A9FA49500CD5D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		657E4F6E2A9FA49500CD5D83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		657E4F702A9FA49500CD5D83 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		657E4F722A9FA49600CD5D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		657E4F752A9FA49600CD5D83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		657E4F7F2A9FB23800CD5D83 /* CinemaARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaARView.swift; sourceTree = "<group>"; };
+		657E4F832A9FB36900CD5D83 /* CinemaARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaARViewController.swift; sourceTree = "<group>"; };
+		657E4F872A9FB53400CD5D83 /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
+		657E4F8A2A9FB71300CD5D83 /* windChimes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = windChimes.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +58,11 @@
 		657E4F6B2A9FA49500CD5D83 /* cinemaAR */ = {
 			isa = PBXGroup;
 			children = (
+				657E4F852A9FB3EF00CD5D83 /* Resources */,
+				657E4F7E2A9FABA100CD5D83 /* View Controllers */,
+				657E4F7D2A9FA8CB00CD5D83 /* Views */,
 				657E4F6C2A9FA49500CD5D83 /* AppDelegate.swift */,
 				657E4F6E2A9FA49500CD5D83 /* ContentView.swift */,
-				657E4F702A9FA49500CD5D83 /* Experience.rcproject */,
 				657E4F722A9FA49600CD5D83 /* Assets.xcassets */,
 				657E4F742A9FA49600CD5D83 /* Preview Content */,
 			);
@@ -68,6 +75,31 @@
 				657E4F752A9FA49600CD5D83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		657E4F7D2A9FA8CB00CD5D83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				657E4F7F2A9FB23800CD5D83 /* CinemaARView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		657E4F7E2A9FABA100CD5D83 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				657E4F832A9FB36900CD5D83 /* CinemaARViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		657E4F852A9FB3EF00CD5D83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				657E4F8A2A9FB71300CD5D83 /* windChimes.mp4 */,
+				657E4F872A9FB53400CD5D83 /* example.mp4 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657E4F8B2A9FBE1900CD5D83 /* example.mp4 in Resources */,
 				657E4F762A9FA49600CD5D83 /* Preview Assets.xcassets in Resources */,
 				657E4F732A9FA49600CD5D83 /* Assets.xcassets in Resources */,
 			);
@@ -142,7 +175,8 @@
 			files = (
 				657E4F6F2A9FA49500CD5D83 /* ContentView.swift in Sources */,
 				657E4F6D2A9FA49500CD5D83 /* AppDelegate.swift in Sources */,
-				657E4F712A9FA49500CD5D83 /* Experience.rcproject in Sources */,
+				657E4F842A9FB36900CD5D83 /* CinemaARViewController.swift in Sources */,
+				657E4F802A9FB23800CD5D83 /* CinemaARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +308,7 @@
 				DEVELOPMENT_TEAM = 7V8U63MAQE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -305,6 +340,7 @@
 				DEVELOPMENT_TEAM = 7V8U63MAQE;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
